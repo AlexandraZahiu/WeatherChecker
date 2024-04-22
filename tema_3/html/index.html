@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="/css/global.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+
+</head>
+
+<body>
+    <div class="card">
+        <div class="search">
+            <input type="text" id="autocompleteInput" placeholder="enter city name" spellcheck="false">
+            <button><img src="/photos/images/search.png" alt="search icon"></button>
+        </div>
+
+        <div class="weather">
+            <img src="/photos/images/thermometer.png" height="200px" class="weather-icon">
+            <h1 class="temp">~</h1>
+            <h2 class="city">No city selected</h2><br>
+            <img src="" alt="City Image" class="city-image" >
+
+            <div class="details">
+                <div class="col">
+                    <img src="/photos/images/humidity.png" alt="humidity icon">
+                    <div>
+                        <p class="humidity">~%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="/photos/images/wind.png" alt="wind icon">
+                    <div>
+                        <p class="wind">~ km/h</p>
+                        <p>Wind speed</p>
+                    </div>
+                </div>
+            </div>
+            <button class="favorite-btn"><img src="/photos/images/heart.png" height=50px></button>
+            <div class="favorites">
+                <h3>Favorites</h3>
+                <ul class="favorites-list"></ul>
+            </div>
+        </div>
+
+        <div class="forecast-btn">
+            <button onclick="showFiveDayForecast()">View 5-Day Forecast</button>
+        </div>
+
+        <div id="five-day-forecast" class="weather-forecast"></div>
+
+    </div>
+
+    <script src="/js/autocomplete.js"></script>
+    
+</body>
+</html>
