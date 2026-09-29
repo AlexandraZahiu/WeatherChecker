@@ -2,7 +2,6 @@
 
 A simple web app that shows the current weather for any city. Built with **HTML, CSS and JavaScript**, using the **OpenWeather** API for weather data and the **Pexels** API for city photos.
 
-<img src="images/screenshot.png" alt="Weather App screenshot" width="380">
 
 ## Features
 
